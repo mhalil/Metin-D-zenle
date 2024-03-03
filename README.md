@@ -6,7 +6,7 @@ PDF dosyalarından, web sayfalarından, ...vb kaynaklardan kopyaladığımız me
 
 ![pdf](img/01.png)
 
-Kopyalanıp yapıştırılan metnin satır verileri, PDF dosyasındaki içerikle ile aynı ve aynı sayıda karakter içeriyor.   
+Kopyalanıp yapıştırılan metnin satır verileri, PDF dosyasındaki içerikle ile aynı ve aynı sayıda karakter içeriyor.   Toplam 20 satır veri var.
 
 ![gedit1](img/02.png)
 
@@ -16,7 +16,7 @@ Metni bu şekilde kopyalayarak Tercüme (translate) uygulamalarına yapıştır�
 > 
 > Düzenlemek istediğiniz metni, kod ile aynı klasöre (dizine), **metin.txt** ismi ile kaydedin ya da kod içerisindeki `txt_dosya = "metin"` kısmını değiştirin.
 
-Kodu çalıştırdığınızda, aynı dizin (klasör) içerisinde **metin_duzenlendi.txt** isminde yeni bir dosya oluşturulacaktır. 
+Kodu çalıştırdığınızda, aynı dizin (klasör) içerisinde **metin_duzenlendi.txt** isminde yeni bir dosya oluşturulacaktır. İçerik, toplam 13 satır veri (cümle) haline geldi.
 
 ![gedit2](img/03.png)
 
