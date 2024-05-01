@@ -43,4 +43,5 @@ Düzenlenmiş metni panoya kopyalamak için **Düzenlenmiş Metni Kopyala** buto
 ![ttkbootstrap1](img/07.png)
 
 Metnin Düzenlenmiş Hali;
+
 ![ttkbootstrap2](img/08.png)
