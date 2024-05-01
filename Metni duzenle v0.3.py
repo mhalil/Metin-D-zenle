@@ -1,10 +1,13 @@
 import tkinter as tk
 from tkinter import ttk
+from ttkbootstrap import Style
 import pyperclip
 
-pencere = tk.Tk()
-pencere.geometry("600x350+500+350")
-pencere.title(".:: Metni Düzenle ::. (v0.2 - Mustafa Halil)")
+style = Style(theme='minty')	# superhero
+
+pencere = style.master
+pencere.geometry("600x350+500+300")
+pencere.title(".:: Metni Düzenle (v 0.3) - Mustafa Halil ::. ")
 
 def metin_kutusundan_kopyala():
 	duzenli = metin_kutusu.get(1.0, tk.END)
@@ -20,7 +23,7 @@ def metin_kutusuna_yapistir():
 		metin_kutusu.delete("1.0", tk.END)
 		metin_kutusu.insert(tk.INSERT, "Panoya kopyalanmış metin bulunmamaktadır.")
 
-yazitipi_ozelligi = ("Calibri", 10)	# ("Tahoma", 10, "bold")
+yazitipi_ozelligi = ("Tahoma", 10)	# ("Tahoma", 10, "bold")
 
 metin_kutusu = tk.Text(
     width=40,
@@ -30,26 +33,20 @@ metin_kutusu = tk.Text(
 metin_kutusu.configure(font = yazitipi_ozelligi)
 metin_kutusu.pack(fill=tk.BOTH, expand=True)
     
-buton_duzenle = tk.Button(
+buton_duzenle = ttk.Button(
     pencere,
-    text="Düzenle",
-    # ~ font=yazitipi_ozelligi,
-    height=1,
-    width=9,
-    cursor="hand2",
+    text="Panodaki Metni  Düzenle",
+	style='TButton',	# Outline.TButton
     command= metin_kutusuna_yapistir
 )
-buton_duzenle.pack(side="right", padx=10, pady=10)
+buton_duzenle.pack(side='right', padx=10, pady=10)
 
-buton_duzenlenmis = tk.Button(
+buton_duzenlenmis = ttk.Button(
     pencere,
-    text="Kopyala",
-    height=1,
-    width=9,
-    cursor="hand2",
+    text="Düzenlenmiş Metni Kopyala",
+    style='TButton',	# Outline.TButton
     command= metin_kutusundan_kopyala
 )
-# ~ buton_duzenlenmis['font']=yazitipi_ozelligi
-buton_duzenlenmis.pack(side="right", padx=10, pady=10)
+buton_duzenlenmis.pack(side='right', padx=10, pady=10)
 
 pencere.mainloop()

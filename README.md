@@ -28,12 +28,19 @@ Gedit programının yatay boyutunu artırsak ta cümle bütünlüğünün korund
 ![gedit4](img/04.png)
 
 ## v0.2
+### tkinter ;
 v0.2 sürümünde, **tkinter, ttkbootstrap** ve **pyperclip** kütüphanleri kullanılarak programa görsel arabirim eklendi.
 
-![gedit2](img/05.png)
+![ktinter1](img/05.png)
 
 Bu sürümde, örnek metni kopyalayın, uygulamayı çalıştırıp **Panodaki Metni Düzenle** butonuna basın. Düzenlenmiş metin, uygulamadaki metin kutusuna eklenecektir. Bu sürümde her cümle ayrı bir satıra gelecek şekilde düzenlenmedi.
 
 Düzenlenmiş metni panoya kopyalamak için **Düzenlenmiş Metni Kopyala** butonuna basmanız yeterlidir.
 
-![gedit2](img/06.png)
+![tkinter2](img/06.png)
+
+### ttkbootstrap ;
+![ttkbootstrap1](img/07.png)
+
+Metnin Düzenlenmiş Hali;
+![ttkbootstrap2](img/08.png)
