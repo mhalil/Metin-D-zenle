@@ -3,22 +3,53 @@ from tkinter import ttk
 from ttkbootstrap import Style
 import pyperclip
 
-style = Style(theme='minty')	# superhero
+style = Style(theme='superhero')	# superhero, minty, lumen, sandstone, cerculean, simplex, morph, united, darkly, 
 
 pencere = style.master
 pencere.geometry("600x350+500+300")
-pencere.title(".:: Metni Düzenle (v 0.3) - Mustafa Halil ::. ")
+pencere.title(".:: Metni Düzenle (v 0.34) - Mustafa Halil ::. ")
 
 def metin_kutusundan_kopyala():
 	duzenli = metin_kutusu.get(1.0, tk.END)
 	pyperclip.copy(duzenli)
 
 def metin_kutusuna_yapistir():
-	pano_icerigi = pencere.clipboard_get()
-	if pano_icerigi:
+	pano_icerigi = pencere.clipboard_get().split(" ")
+	print(pano_icerigi)
+	
+	gecici_cikti = ""
+	nihai_cikti = ""
+	
+	if pano_icerigi != "":
+		for kelime in pano_icerigi:
+			if kelime == "":
+				pano_icerigi.remove(kelime)
+		
+		for kelime in pano_icerigi:	
+			if kelime[-1] == "-":
+				gecici_cikti += kelime[:-1]
+			
+			elif ".\n" in kelime:
+				gecici_cikti += kelime.replace(".\n", "|")
+			
+			elif "\n" in kelime:
+				gecici_cikti += kelime.replace("\n"," ")
+			
+			else:
+				gecici_cikti += kelime + " "
+		
+		for kelime in gecici_cikti:
+			if "|" in kelime:
+				nihai_cikti += kelime.replace("|", ".\n")
+			
+			else:
+				nihai_cikti += kelime
+		
+		gecici_cikti = ""
+					
 		metin_kutusu.delete("1.0", tk.END)
-		pano_icerigi = pano_icerigi.replace("\n"," ")
-		metin_kutusu.insert(tk.INSERT, pano_icerigi)
+		metin_kutusu.insert(tk.INSERT, nihai_cikti)
+		
 	else:
 		metin_kutusu.delete("1.0", tk.END)
 		metin_kutusu.insert(tk.INSERT, "Panoya kopyalanmış metin bulunmamaktadır.")
@@ -36,7 +67,7 @@ metin_kutusu.pack(fill=tk.BOTH, expand=True)
 buton_duzenle = ttk.Button(
     pencere,
     text="Panodaki Metni  Düzenle",
-	style='TButton',	# Outline.TButton
+	style='TButton',	# Outline.TButton - primary, secondary, success, info, warning, danger, light, dark
     command= metin_kutusuna_yapistir
 )
 buton_duzenle.pack(side='right', padx=10, pady=10)

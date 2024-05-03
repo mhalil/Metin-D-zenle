@@ -33,14 +33,18 @@ v0.2 sürümünde, **tkinter, ttkbootstrap** ve **pyperclip** kütüphanleri kul
 
 ![ktinter1](img/05.png)
 
-Bu sürümde, örnek metni kopyalayın, uygulamayı çalıştırıp **Panodaki Metni Düzenle** butonuna basın. Düzenlenmiş metin, uygulamadaki metin kutusuna eklenecektir. Bu sürümde her cümle ayrı bir satıra gelecek şekilde düzenlenmedi.
+Bu sürümde, örnek metni kopyalayın, uygulamayı çalıştırıp **Düzenle** butonuna basın. Düzenlenmiş metin, uygulamadaki metin kutusuna eklenecektir. Bu sürümde her cümle ayrı bir satıra gelecek şekilde **düzenlenmedi.**
 
-Düzenlenmiş metni panoya kopyalamak için **Düzenlenmiş Metni Kopyala** butonuna basmanız yeterlidir.
+Düzenlenmiş metni panoya kopyalamak için **Kopyala** butonuna basmanız yeterlidir.
 
 ![tkinter2](img/06.png)
 
 ### ttkbootstrap ;
+örnek metni kopyalayın, uygulamayı çalıştırıp **Panodaki Metni Düzenle** butonuna basın. Düzenlenmiş metin, uygulamadaki metin kutusuna eklenecektir.
+
 ![ttkbootstrap1](img/07.png)
 
 Metnin Düzenlenmiş Hali;
+
+Düzenlenmiş metni panoya kopyalamak için **Düzenlenmiş Metni Kopyala** butonuna basmanız yeterlidir.
 ![ttkbootstrap2](img/08.png)
