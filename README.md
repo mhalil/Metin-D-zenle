@@ -49,3 +49,31 @@ Metnin Düzenlenmiş Hali;
 Düzenlenmiş metni panoya kopyalamak için **Düzenlenmiş Metni Kopyala** butonuna basmanız yeterlidir.
 
 ![ttkbootstrap2](img/08.png)
+
+## v0.4
+Bu sürümde;
+* Fazla boşluk ve tab sekme mesafeleri ayarlandı,
+* Paragraf yapıları, orijinal metne uygun şekilde ayarlanmaya çalışıldı, 
+* Uygulama arabirimindeki iki buton yerine tek buton kullanımı tercih edildi. Artık tek butona basılınca metin düzenlenecek ve düzenlenmiş metin panoya kopyalanacak.
+
+**Örnek metin;**
+```
+	2.1 Python Nedir?
+			Tahmin edebileceğiniz gibi Python (C, C++, Perl, Ruby ve benzerleri gibi) bir program-
+lama dilidir ve tıpkı öteki programlama dilleri gibi, önünüzde duran kara kutuya, yani bilgisayara
+hükmetmenizi sağlar.
+		   Bu programlama dili Guido  Van   Rossum adlı Hollandalı bir programcı tarafından 90’lı yılların
+başında geliştirilmeye başlanmıştır. Çoğu insan, isminin Python olmasına aldanarak, bu program-
+lama dilinin, adını piton yılanından aldığını düşünür. Ancak zannedildiğinin aksine bu programlama
+dilinin adı piton yılanından gelmez. Guido Van Rossum bu programlama dilini, The Monty Python
+adlı bir İngiliz komedi grubunun, Monty Python’s Flying Circus adlı gösterisinden esinlenerek adlan-
+dırmıştır. Ancak her ne kadar gerçek böyle olsa da, Python programlama dilinin pek çok yerde bir yılan
+ﬁgürü ile temsil edilmesi neredeyse bir gelenek halini almıştır (65)
+	           Dediğimiz gibi, Python bir programlama dilidir. Üstelik pek çok dile kıyasla öğrenmesi ko-
+lay bir programlama dilidir. Bu yüzden, eğer daha önce hiç programlama deneyiminiz
+olmamışsa, programlama maceranıza Python’la başlamayı  tercih edebilirsiniz;
+	Python'ın İyi bir başlangıç olacağından hiç şüphem yok.
+```
+
+Yukarıdaki örnek metni, v0.4 sürümü ile düzenlemeye çalıştığımda aşağıdaki ekran görüntüsündeki sonucu elde ettim.
+![ttkbootstrap2](img/09.png)
